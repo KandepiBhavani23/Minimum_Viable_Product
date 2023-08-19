@@ -9,7 +9,7 @@ const ProductsData = () => {
 	useEffect(() => {
 		async function fetchData() {
 			try {
-				const response = await fetch("/api/productData.json"); // Adjust the path if needed
+				const response = await fetch("/api/productData.json"); 
 				const data = await response.json();
 				setProducts(data);
 			} catch (error) {
